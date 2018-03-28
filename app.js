@@ -3,7 +3,8 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var mustacheExpress = require('mustache-express');
-mongoose.connect('mongodb://localhost/test');
+//mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://heroku_6m6krb1m:386j4bapj5i2r592nuihg13m58@ds227119.mlab.com:27119/heroku_6m6krb1m');
 let Book = require('./models/book');
 var books = require('./routes/books');
 
